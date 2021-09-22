@@ -13,6 +13,7 @@ public class StackImpl<E> implements Stack<E> {
     public void push(E e) {
         stack[lastID] = e;
         lastID++;
+        System.out.println(lastID);
     }
 
     @Override
@@ -21,6 +22,7 @@ public class StackImpl<E> implements Stack<E> {
         E lastObject = stack[lastID];
         stack[lastID] = null;
         lastID--;
+        System.out.println(lastID);
         return lastObject;
     }
 
